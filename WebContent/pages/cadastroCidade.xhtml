@@ -4,74 +4,68 @@
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:p="http://primefaces.org/ui" template="/pages/template.xhtml">
 
-<ui:define name="conteudo">
+	<ui:define name="conteudo">
 
-<f:view>
-<center>
+		<h:form id="form">
+			<p:growl id="growl" showDetail="false" sticky="false" life="5000" />
 
-	<h:form id="form">
-		<p:growl id="growl" showDetail="false" sticky="false"  life="5000" /> 
-		
-	    	
-	    	<p:panel id="panel" header="Cadastro de Cidade">
-	    	
-			<p:panelGrid id="pgDados" columns="2" styleClass="semBorda" >
-			
-				<p:commandLink value="Nome:"
-					actionListener="#{cidadeController.abrirListCidade}" >
-					<p:ajax event="dialogReturn" update="form"  />
-				</p:commandLink>
+			<p:panel id="panel" header="Cadastro de Cidade">
 
-				<p:inputText value="#{cidadeController.entity.nome}" />
-				
-			</p:panelGrid>
+				<p:panelGrid id="pgDados" columns="2" styleClass="semBorda">
+
+					<p:commandLink value="Nome:"
+						actionListener="#{cidadeController.abrirListCidade}">
+						<p:ajax event="dialogReturn" update="form" />
+					</p:commandLink>
+
+					<p:inputText value="#{cidadeController.entity.nome}" />
+
+				</p:panelGrid>
 
 
-			<p:commandButton value="Incluir" 
-				actionListener="#{cidadeController.insert}" 
-				disabled="#{cidadeController.entity.id != null}"
-				process="panel" update="form" />
-			
-			<p:commandButton value="Alterar" 
-				actionListener="#{cidadeController.update}" 
-				disabled="#{cidadeController.entity.id == null}"
-				process="panel" update="form" />
-	
-			<p:commandButton value="Excluir" 
-				actionListener="#{cidadeController.delete}" 
-				disabled="#{cidadeController.entity.id == null}"	
-				process="panel" update="form" />
-			
-			<p:commandButton value="Limpar" 
-				actionListener="#{cidadeController.clean}" 
-				process="panel" update="form" />
+				<p:commandButton value="Incluir" icon="fa fa-plus"
+					actionListener="#{cidadeController.insert}"
+					disabled="#{cidadeController.entity.id != null}" process="panel"
+					update="form" />
 
-		</p:panel>	
-		
-		<br/><p:separator id="separator" /><br/>
+				<p:commandButton value="Alterar" icon="fa fa-pencil"
+					actionListener="#{cidadeController.update}"
+					disabled="#{cidadeController.entity.id == null}" process="panel"
+					update="form" />
 
-		<p:dataTable id="dataTable" value="#{cidadeController.listaCidade}" var="objeto" >	
-			<p:column>
-				<f:facet name="header">Id</f:facet>
-	    				#{objeto.id}
-	    		</p:column>
-			<p:column >
-				<f:facet name="header">Nome</f:facet>
-	    				#{objeto.nome}
-	    		</p:column>
-			<p:column >
-				<f:facet name="header">Ação</f:facet>
-				<p:commandButton value="Editar" update="form" >
-					<f:setPropertyActionListener
-						target="#{cidadeController.entity}" value="#{objeto}" />
-				</p:commandButton>
-			</p:column>
-	    		
-		</p:dataTable>
-	
-	</h:form>
-</center>	
-</f:view>
+				<p:commandButton value="Excluir" icon="fa fa-trash"
+					actionListener="#{cidadeController.delete}"
+					disabled="#{cidadeController.entity.id == null}" process="panel"
+					update="form" />
 
-</ui:define>
+				<p:commandButton value="Limpar" icon="fa fa-eraser"
+					actionListener="#{cidadeController.clean}" process="panel"
+					update="form" />
+
+			</p:panel>
+
+			<p:separator id="separator" styleClass="separador" />
+
+			<p:dataTable id="dataTable" value="#{cidadeController.listaCidade}"
+				var="objeto">
+				<p:column>
+					<f:facet name="header">Id</f:facet>
+					<h:outputText value="#{objeto.id}" />
+				</p:column>
+				<p:column>
+					<f:facet name="header">Nome</f:facet>
+					<h:outputText value="#{objeto.nome}" />
+				</p:column>
+				<p:column>
+					<f:facet name="header">Ação</f:facet>
+					<p:commandButton value="Editar" update="form">
+						<f:setPropertyActionListener target="#{cidadeController.entity}"
+							value="#{objeto}" />
+					</p:commandButton>
+				</p:column>
+			</p:dataTable>
+
+		</h:form>
+
+	</ui:define>
 </ui:composition>

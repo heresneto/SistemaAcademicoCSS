@@ -1,3 +1,88 @@
-.semBorda tr, .semBorda td {  
-    border: none !important;  
-} 
+.ui-widget {
+	font-size: 12px !important;
+}
+
+.autocomplete400, .ui-autocomplete input {
+	width: 400px;
+}
+
+.semBorda tr, .semBorda td {
+	border: none !important;
+}
+
+.separador {
+	margin: 20px auto;
+	border: 1px solid #7096ab !important;
+}
+
+.cabecalho {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 80px;
+	background-color: aqua;
+	z-index: 999;
+}
+
+.cabecalho h1 {
+	display: inline;
+}
+
+.logo {
+	height: 70px;
+	margin: 5px;
+}
+
+.meio {
+	margin-top: 85px;
+}
+
+.menu  {
+	position: absolute;
+	z-index: 995;
+	-moz-box-shadow: #888 2px 2px 4px;
+	-webkit-box-shadow: #888 2px 2px 4px;
+	box-shadow: #888 2px 2px 4px;
+}
+
+.menuLeft {
+  top: 0;
+  left: 0;
+  float: left;
+  width: 330px;
+  height: 100%;
+  background-color: #004E66;
+  display: none;
+  position: fixed;
+  padding: 90px 5px 5px;
+}
+
+.mostraEsquerda {
+	color: black;
+}
+
+.iconeMenu{
+    transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -webkit-transition: all 1s linear;
+}
+
+.iconeMenu.fecha{
+    transform:rotate(405deg);
+    -moz-transform:rotate(405deg);
+    -webkit-transform:rotate(405deg);
+}
+
+.conteudo {
+  z-index: -998;
+  width: 95%;
+  overflow: auto;
+}
+
+.rodape {
+	height: 40px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	background-color: fuchsia;
+}
