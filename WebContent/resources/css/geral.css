@@ -23,7 +23,7 @@ body, html {
 
 .ui-separator {
 	margin: 20px auto;
-	border: 1px solid #7096ab !important;
+	border: 1px solid #B3B3B3 !important;
 }
 
 .cabecalho {
@@ -33,14 +33,13 @@ body, html {
 	top: 0;
 	left: 0;
 	height: 80px;
-	background-color: #e97f02;
-	/* background-color: #fc913a; */
+	background-color: #F27E22;
 	z-index: 998;
 	color: #fff;
 	
-	box-shadow: #888 2px 2px 4px;
+	/* box-shadow: #888 2px 2px 4px;
 	-moz-box-shadow: #888 2px 2px 4px;
-	-webkit-box-shadow: #888 2px 2px 4px;
+	-webkit-box-shadow: #888 2px 2px 4px; */
 }
 
 .cabecalho h1 {
@@ -53,12 +52,14 @@ body, html {
 	display: inline-block;
 	width: 330px;
 	height: 80px;
-	background-color: #fff;
-	border-right: 1px solid #ff4e50;
+	background-color: #DC5412;
+	border-right: 1px solid #fff;
 }
 
 .logo {
-	height: 100%;
+	margin-top: 10px;
+	margin-left: 10px;
+	height: 80%;
 }
 
 .quadroLogo h1 {
@@ -67,7 +68,7 @@ body, html {
 	top: -15px;
 	left: 133px;
 	font-size: 35pt;
-	color: #ff4e50;
+	color: #fff;
 }
 
 .quadroIconeMenu {
@@ -82,8 +83,8 @@ body, html {
 
 	text-align: center;
 
-	background-color: #490a3d;
-	border-right: 1px solid #ff4e50;
+	background-color: #FFBB00;
+	/* border-right: 1px solid #fff; */
 	border-radius: 50%;
 }
 
@@ -99,9 +100,9 @@ body, html {
 }
 
 .iconeMenu.fecha{
-    transform:rotate(405deg);
-    -moz-transform:rotate(405deg);
-    -webkit-transform:rotate(405deg);
+    transform:rotate(-405deg);
+    -moz-transform:rotate(-405deg);
+    -webkit-transform:rotate(-405deg);
 }
 
 .menu   {
@@ -111,14 +112,15 @@ body, html {
 	left: 0;
 	width: 320px;
 	height: 100%;
-	background-color: #fff;
+	background-color: #262626;
 	display: none;
 	padding: 90px 5px 5px;
-	border-right: 1px solid #490a3d;
+	border-right: 1px solid #DC5412;
+	color: #fff;
 
-	box-shadow: #888 2px 2px 4px;
-	-moz-box-shadow: #888 2px 2px 4px;
-	-webkit-box-shadow: #888 2px 2px 4px;
+	/* box-shadow: #585858 2px 2px 4px;
+	-moz-box-shadow: #585858 2px 2px 4px;
+	-webkit-box-shadow: #585858 2px 2px 4px; */
 }
 
 
@@ -137,7 +139,24 @@ body, html {
 	position: fixed;
 	bottom: 0;
 	right: 0;
-	background-color: #e97f02;
+	background-color: #DC5412;
 	color: #fff;
 	text-align: right;
 }
+
+
+/*
+
+amarelo destaques	#FFBB00
+
+laranja claro		#FDE6D5
+laranja claro ativo	#F8B27E
+laranja aceso		#F27E22
+laranja escuro		#DC5412
+
+cinza escuro texto	#525253
+cinza medio linhas	#B3B3B3
+cinza claro fundo	#E6E6E6
+
+
+*/
