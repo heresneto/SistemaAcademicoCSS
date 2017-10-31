@@ -2,7 +2,7 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
-	xmlns:p="http://primefaces.org/ui" template="/pages/template.xhtml">
+	xmlns:p="http://primefaces.org/ui" template="/pages/templateOld.xhtml">
 
 <ui:define name="conteudo">
 
@@ -14,7 +14,7 @@
 		
 	    	
 	    	<p:panel id="panel" header="Cadastro de Aluno">
-			<p:panelGrid id="pgDados" columns="2" styleClass="semBorda" >
+			<p:panelGrid id="pgDados" columns="2" styleClass="semBorda Wid10" >
 				<p:outputLabel value="Matrícula:" />
 				<p:inputText value="#{alunoController.entity.matricula}" />
 	
@@ -56,7 +56,7 @@
 					
 		<br/><p:separator id="separator" /><br/>
 
-		<p:dataTable id="dataTable" value="#{alunoController.listaAluno}" var="objeto" widgetVar="dataTableWV" >	
+		<p:dataTable id="dataTable" value="#{alunoController.listaAluno}" var="objeto" widgetVar="dataTableWV" reflow="true" styleClass="semBorda">	
 			<p:column>
 				<f:facet name="header">Id</f:facet>
 	    				#{objeto.id}

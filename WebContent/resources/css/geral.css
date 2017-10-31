@@ -21,7 +21,7 @@ body, html {
 	border: none !important;
 }
 
-.separador {
+.ui-separator {
 	margin: 20px auto;
 	border: 1px solid #7096ab !important;
 }
@@ -33,7 +33,8 @@ body, html {
 	top: 0;
 	left: 0;
 	height: 80px;
-	background-color: #fc913a;
+	background-color: #e97f02;
+	/* background-color: #fc913a; */
 	z-index: 998;
 	color: #fff;
 	
@@ -81,7 +82,7 @@ body, html {
 
 	text-align: center;
 
-	background-color: #ff4e50;
+	background-color: #490a3d;
 	border-right: 1px solid #ff4e50;
 	border-radius: 50%;
 }
@@ -113,7 +114,7 @@ body, html {
 	background-color: #fff;
 	display: none;
 	padding: 90px 5px 5px;
-	border-right: 1px solid #ff4e50;
+	border-right: 1px solid #490a3d;
 
 	box-shadow: #888 2px 2px 4px;
 	-moz-box-shadow: #888 2px 2px 4px;
@@ -136,7 +137,7 @@ body, html {
 	position: fixed;
 	bottom: 0;
 	right: 0;
-	background-color: #ff4e50;
+	background-color: #e97f02;
 	color: #fff;
 	text-align: right;
 }
