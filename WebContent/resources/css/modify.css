@@ -1,0 +1,48 @@
+/* BOTÕES */
+.m-button {
+	background-color: #F27E22 !important;
+	background-image: none !important;
+	border: none !important;
+	
+	color: #fff !important;
+	text-shadow: none !important;
+}
+
+.m-button:hover {
+	background-color: #F8B27E !important;
+	box-shadow: none !important;
+	color: #DC5412 !important;
+}
+
+.m-button:disabled{
+	opacity: 1;
+	background-color: #FDE6D5 !important;
+	color: #fff !important;
+	border: none !important;
+}
+
+/* CAMPOS */
+
+.m-input {
+	box-shadow: none !important;
+	background-color: #e6e6e6 !important;
+	border: none !important;
+	border-bottom: 2px solid #B3B3B3 !important;
+	border-radius: 0;
+}
+
+.m-input:hover {
+	box-shadow: none !important;
+	background-color: #e6e6e6 !important;
+	border: none !important;
+	border-bottom: 2px solid #FFBB00 !important;
+	border-radius: 0;
+}
+
+.m-input:focus {
+	box-shadow: none !important;
+	background-color: #e6e6e6 !important;
+	border: none !important;
+	border-bottom: 2px solid #F27E22 !important;
+	border-radius: 0;
+}
