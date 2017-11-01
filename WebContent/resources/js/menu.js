@@ -1,8 +1,9 @@
 jQuery(document).ready(function($) {
 
 	$(".iconeMenu").click(function() {
-		$(".menu").fadeToggle();
+		$(".menu").slideToggle(1000);
 		$(this).toggleClass("fecha");
 	});
+	
 
 });

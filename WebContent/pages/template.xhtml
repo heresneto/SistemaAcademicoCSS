@@ -32,8 +32,7 @@
 	
 		<div class="cabecalho ui-g-12">
 			<div class="quadroLogo">
-				<p:graphicImage library="img" name="logo.jpg" styleClass="logo" />
-				<h1>SisAcad</h1>
+				<p:graphicImage library="img" name="logo.png" styleClass="logo" />
 			</div>
 		</div>
 	
@@ -41,12 +40,8 @@
 		<div class="meio ui-g-12">
 			<div class="menu">
 				<h:form>
-					<p:panelMenu >
-						<p:submenu label="Cadastro" expanded="true">
-							<p:menuitem value="Alunos" action="/pages/cadastroAluno.xhtml" ajax="false" icon="ui-icon-disk" />
-							<p:menuitem value="Cidades" action="/pages/cadastroCidade.xhtml" ajax="false" icon="ui-icon-disk" />
-						</p:submenu>
-					</p:panelMenu>
+					<i class="fa fa-chevron-right"/><p:link value=" Alunos" outcome="/pages/cadastroAluno.xhtml" style="color:white;" /> <br/>
+					<i class="fa fa-chevron-right"/><p:link value=" Cidades" outcome="/pages/cadastroCidade.xhtml" style="color:white;" />
 				</h:form>
 			</div>
 			<div class="conteudo">
