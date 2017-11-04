@@ -27,7 +27,7 @@
 							<p:inputText value="#{alunoController.entity.nome}" styleClass="m-input"/>
 
 							<p:outputLabel value="Natural de:" />
-							<p:selectOneMenu value="#{alunoController.entity.cidade}">
+							<p:selectOneMenu value="#{alunoController.entity.cidade}" styleClass="m-select">
 								<f:converter converterId="cidadeConverter" />
 								<f:selectItem itemLabel="Selecione uma cidade ..." />
 								<f:selectItems value="#{alunoController.listaCidade}" var="o"
