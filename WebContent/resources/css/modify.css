@@ -1,4 +1,5 @@
 /* BOTÕES */
+/*
 .m-button {
 	background-color: #F27E22 !important;
 	background-image: none !important;
@@ -24,8 +25,13 @@
 	color: #fff !important;
 	border: none !important;
 }
+*/
+/* FIM BOTÕES */
+
+
 
 /* CAMPOS */
+/*
 .m-input {
 	box-shadow: none !important;
 	background-color: #e6e6e6 !important;
@@ -42,8 +48,13 @@
 	border-color: #F27E22 !important;
 	background-color: #FDE6D5 !important;
 }
+*/
+/* FIM CAMPOS */
+
+
 
 /* SELECT */
+/*
 .m-select {
 	border: none !important;
 	border-radius: 0;	
@@ -90,15 +101,23 @@ li.ui-state-hover {
 	border: none !important;
 	text-shadow: none !important;
 }
+*/
+/* FIM SELECT */
 
 
 
-/*ALINHAMENTO DE TEXTO / ALINHANDO OS CAMPOS*/
+/* ALINHAMENTO DE TEXTO / ALINHANDO OS CAMPOS */
+/*
 .m-text-left {
 	text-align: left !important;
 }
+*/
+/* FIM ALINHAMENTO DE TEXTO / ALINHANDO OS CAMPOS */
 
-/*CONTROLES DE RESPONSIVIDADE*/
+
+
+/* CONTROLES DE RESPONSIVIDADE */
+/*
 .m-width-100 {width: 100%;}
 .m-width-95 {width: 95%;}
 .m-width-80 {width: 80%;}
@@ -111,11 +130,14 @@ li.ui-state-hover {
         font-size: 10pt;
         height: 36px;
     }
-    
-    
 }
+*/
+/* FIM CONTROLES DE RESPONSIVIDADE */
 
-/*DATATABLE*/
+
+
+/* DATATABLE */
+/*
 .ui-datatable .ui-datatable-header {
 	background-color: #F27E22 !important;
 	background-image: none !important;
@@ -130,7 +152,7 @@ li.ui-state-hover {
 	text-shadow: none !important;
 }
 
-
 .ui-datatable-odd {
 	background-color: #FDE6D5 !important;
-}
+}*/
+/* FIM DATATABLE */
