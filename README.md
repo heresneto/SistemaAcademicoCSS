@@ -1,2 +1,2 @@
-# SistemaAcademicoCSS
-Sistema Acadêmico de Exemplo - Com aplicação de CSS
+# Sistema Academico
+Sistema Acadêmico de Exemplo Aplicação de CSS sobre Primefaces
